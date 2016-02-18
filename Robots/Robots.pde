@@ -1,13 +1,8 @@
-// Create the canvas
-size(600, 600);
+void setup() {
 
-// Add code below to make your preferred
-// robot, according to your plan.
-//
-// NOTE: Before you begin coding, please
-//       post a clear photograph of your plans
-//       to Sesame.
-//
-// NOTE: Please commit to GitHub repository
-//       in stages – as each "part" of your
-//       robot is finished.
+  //canvas
+  size(displayWidth, displayHeight);
+  KC_Robot chepehaRobot = new KC_Robot ();
+  chepehaRobot.drawAt(0, 0, 0.5, 0.5);
+  chepehaRobot.drawAt(300, 300, 1, 1);
+}
