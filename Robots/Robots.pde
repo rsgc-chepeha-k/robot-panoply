@@ -1,12 +1,13 @@
 void setup() {
-  size(1000, 700);
+  size(700, 700);
   //tim robot variable
-  TMRobots deadPeople = new TMRobots();
-  //loop
-  deadPeople.drawAt(800, 590, 0.4, 0.4);
-  deadPeople.drawAt(800, 590, 0.4, 0.4);
-  deadPeople.drawAt(800, 590, 0.4, 0.4);
-  deadPeople.drawAt(800, 590, 0.4, 0.4);
+  TMRobots Bride = new TMRobots();
+  ASPRobot Blonde = new ASPRobots();
+  Bride.drawAt(575, 350, 0.3, 0.3);
+  Blonde.drawAt
+  //deadPeople.drawAt(800, 590, 0.4, 0.4);
+  //deadPeople.drawAt(800, 590, 0.4, 0.4);
+  //deadPeople.drawAt(800, 590, 0.4, 0.4);
   //int x = 0;
   //while (x<5) {
   //  // draw robot
