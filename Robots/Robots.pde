@@ -14,6 +14,7 @@ void setup() {
   billBrother.drawAt(200, 400);
   chinese.drawAt(350,150, 0.5, 0.5);
   bill.drawAt(300,1200,0.9,0.9);
+  pushMatrix
   //deadPeople.drawAt(800, 590, 0.4, 0.4);
   //deadPeople.drawAt(800, 590, 0.4, 0.4);
   //deadPeople.drawAt(800, 590, 0.4, 0.4);
