@@ -115,10 +115,39 @@ void draw() {
       }
     }
   }
-}
 
+  if (sceneNumber == 2) {
+    background(50);
+    DHRobot cottonMouth = new DHRobot (); 
+    TMRobots bride = new TMRobots();
+    blood blood1 = new blood ();
+    Speach speach = new Speach ();
+    blood1.drawAt(441, 414, 4.6, 3.31);
+
+    pushMatrix();
+    translate(493, 347);
+    rotate(radians(90));
+    cottonMouth.drawAt(0, 0, 0.18, 0.18);
+    popMatrix();
+    blood1.drawAt(473, 383, 0.6, 0.60);
+    blood1.drawAt(473, 419, 0.6, 0.60);
+    bride.drawAt(575, 349, 0.3, 0.3);
+    speach.drawAt(508, 344, 5.2, 1.26);
+    fill(0);
+    {
+      textSize(12);
+      {
+        text( "Need some eyes M8", 457, 350);
+      }
+      textSize(16);
+      {
+        text( "California Mountain Snake Dead", 390, 487);
+      }
+    }
+  }
+}
 void keyPressed() {
-  if (sceneNumber < 4) {
+  if (sceneNumber < 3) {
     sceneNumber ++;
   } else {
     sceneNumber = 0;
