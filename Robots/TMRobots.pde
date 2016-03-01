@@ -5,7 +5,7 @@ class TMRobots {
 
   // draws robot at specified location
   void drawAt(int posX, int posY, float horizScale, float vertScale) {
-
+    strokeWeight(1);
     stroke(1);
     rectMode(CORNER);
 
