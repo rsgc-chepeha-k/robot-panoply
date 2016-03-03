@@ -3,7 +3,7 @@ void EPRobot2() {/*Nothing to construct*/}
 
 void drawAt2(int cx, int cy, float cHorizontal, float cVertical) { //function drawing circlular bot
   //draw head
-  stroke(5);
+  stroke(2);
   fill(255);
   ellipse(cx + (width/2)*cHorizontal, cy + (height/2)*cVertical, 100*cHorizontal, 100*cVertical);
   //draw eyes

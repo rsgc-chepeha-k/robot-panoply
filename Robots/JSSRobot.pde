@@ -4,6 +4,7 @@ class JSSRobot {
   } 
 
   void drawAt (int x, int y, float horizontalScale, float verticalScale) {
+    stroke(1);
     ellipse(x + (75* horizontalScale), y + (75* verticalScale), 80* horizontalScale, 80* verticalScale);
     rect(x + (73* horizontalScale), y + (115* verticalScale), 1* horizontalScale, 100* verticalScale);
     rect(x + (59* horizontalScale), y + (200* verticalScale), 34* horizontalScale, 80* verticalScale);
