@@ -13,15 +13,23 @@ void draw() {
 
   //Allowing this scene to come up first
   if (sceneNumber == 0) {
+    //giving all of the classes variable names, so they can be drawn later on in this draw loop
+    blood blood1 = new blood ();
+
     //drawing title page
-    background(0);
-    fill(255);
+    background(233, 230, 0);
+    blood1.drawAt(348, 351, 20.0, 0.70);
+    blood1.drawAt(540, 657, 10.1, 0.45);
+    fill(100);
     textSize(64);
-    text("Kill Bill Pt. 1", 152, 329);
+    textAlign(CENTER);
+    text("Kill Bill Pt. 1", 350, 350);
+    textSize(24);
+    text( "by: Kern Chepeha", 550, 655);
   }
 
   //Allowing this scene to come up once 1 button has been pressed
-  if (sceneNumber == 1) {
+  else if (sceneNumber == 1) {
 
     //giving all of the classes variable names, so they can be drawn later on in this draw loop
     TMRobots bride = new TMRobots();
@@ -44,6 +52,7 @@ void draw() {
     rect(562, 398, 92, 56);
     fill(0);
     textSize(12);
+    textAlign(LEFT);
     text( "Wedding Crashed", 300, 650);
 
     //Drawing the blood under the dead victims
@@ -109,7 +118,7 @@ void draw() {
   }
 
   //Allowing this scene to come up once 2 buttons have been pressed
-  if (sceneNumber == 2) {
+  else if (sceneNumber == 2) {
 
     //giving all of the classes variable names, so they can be drawn later on in this draw loop
     BDRobot californiaMountainSnake = new BDRobot();
@@ -151,8 +160,8 @@ void draw() {
     text( "Your Mother Had it Comin'", 414, 365);
   }
 
-//Allowing this scene to come up once 3 buttons have been pressed
-  if (sceneNumber == 3) {
+  //Allowing this scene to come up once 3 buttons have been pressed
+  else if (sceneNumber == 3) {
 
     //giving all of the classes variable names, so they can be drawn later on in this draw loop
     DHRobot cottonMouth = new DHRobot (); 
@@ -192,6 +201,10 @@ void draw() {
     textSize(12);
     text( "Need some eyes M8", 457, 350);
   }
+  if (frameCount % 180 == 0) {
+  sceneNumber +=1;
+  }
+  saveFrame("export-####.png");
 }
 
 //statement allowing the different scenes to be in the same program
